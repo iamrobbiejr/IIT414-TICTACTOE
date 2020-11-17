@@ -206,7 +206,7 @@ function clickedCell(cell) {
 		msg.innerHTML = "Draw!";
 	}
 	if (gameOverAll(board) == true || emptyCells(board).length == 0) {
-		button.value = "Restart";
+		button.value = "Restart Game";
 		button.disabled = false;
 	}
 }
@@ -217,7 +217,7 @@ function restartBnt(button) {
 		aiTurn();
 		button.disabled = true;
 	}
-	else if (button.value == "Restart") {
+	else if (button.value == "Restart Game") {
 		var htmlBoard;
 		var msg;
 
